@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>The Code Review</title>
+</head>
+<body>
+  <header>
+    <div class="content-wrapper">
+      <h1>THE CODE REVIEW</h1>
+      </div>
+  </header>
+
+  <div class="intro content-wrapper">
+    <h2>Signup for our newsletter</h2>
+    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <hr class="hr">
+  </div>
+
+  <div class="content-wrapper">
+    <form action="/my_form_page" method="POST">
+      <section>
+        <h2>Contact Information</h2>
+        <div class="contact">
+          <div class="contact-item">
+            <label class="label" for="name">
+              Full Name
+            </label>
+            <input required type="text" id="name" name="fullname" placeholder="required">
+          </div>
+
+          <div class="contact-item">
+            <label class="label" for="mail">
+              Email Address
+            </label>
+            <input required type="email" id="mail" name="email-address" placeholder="required">
+          </div>
+
+          <div class="contact-item">
+            <label class="label" for="phone">
+              Phone Number
+            </label>
+            <input type="tel" id="phone" name="phone-number" placeholder="123-456-7890">
+            
+          </div>
+
+          <div class="contact-item">
+            <label class="label" for="address">
+              Street Address
+            </label>
+            <input type="text" id="address" name="street-address">
+          </div>
+
+          <div class="contact-item">
+            <label class="label" for="city">
+              City
+            </label>
+            <input type="text" id="city" name="user-city">
+          </div>
+
+          <div class="contact-item">
+            <label class="label" for="state">
+              State
+            </label>
+            <select id="state" name="state">
+              <option selected>Choose State</option>
+              <option>Osun</option>
+              <option>Lagos</option>
+              <option>Ogun</option>
+            </select>
+          </div>
+
+          <div class="contact-item" >
+            <div class="col1">
+            <label class="label " for="zip">
+              Zip Code
+            </label>
+            <input class="clear" type="text" id="zip" name="zip-code">
+            </div>
+            <div class = "col2"></div>
+          </div>
+          
+        </div>
+      </section>
+     
+      <section>
+        <h2 class="newsletter">Newsletter</h2>
+        <fieldset>
+          <legend>Select the newsletters you would like to receive</legend>
+          <ul class="select-area">
+            <li>
+              <input type="checkbox" id="html" name="html">
+              <label for="html">HTML News</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="css" name="css">
+              <label for="css">CSS News</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="javascript" name="javascript">
+              <label for="javascript">Javascript News</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Newsletter Format</legend>
+          <ul>
+            <li>
+              
+              <input type="radio" id="HTML-letter" name="newsletter" value="HTML-letter">
+              <label for="HTML-letter">HTML</label>
+            </li>
+
+            <li>
+              
+              <input type="radio" id="plain-text" name="newsletter" value="plain-text">
+              <label for="plain-text">Plain text</label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>Other topics you'd like to hear about</p>
+        <textarea name="message" ></textarea>
+        <button type="submit">
+          Sign Up
+      </button>
+      </section>
+      <footer>Copyright The Code Review</footer>
+    </form>
+  </div>
+</body>
+</html>
