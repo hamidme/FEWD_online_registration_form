@@ -114,7 +114,8 @@ button {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   background: #f8f8ea70;
 }
 button:hover {
