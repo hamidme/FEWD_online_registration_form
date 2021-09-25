@@ -217,7 +217,7 @@ footer {
   }
   .zip input {
     min-width: 100px;
-    width: calc(65% - 350px);
+    width: calc(55% - 350px);
   }
 
   .zip label {
