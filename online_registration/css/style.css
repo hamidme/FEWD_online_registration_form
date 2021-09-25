@@ -18,6 +18,11 @@ body {
   margin: 0 auto;
 }
 
+.news-section {
+  background: rgb(242, 248, 248);
+  padding: 10px;
+}
+
 ul {
   list-style: none;
 }
@@ -37,7 +42,7 @@ p {
 
 p,
 legend {
-  font-size: small;
+  font-size: medium;
   color: #adaeaf;
 }
 header {
@@ -116,7 +121,8 @@ button {
 input:focus,
 textarea:focus,
 select:focus {
-  background: #f8f8ea70;
+  background: #dafffd;
+  transition: ease 4s;
 }
 button:hover {
   background: #43a19d;
