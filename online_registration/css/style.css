@@ -199,12 +199,10 @@ footer {
   .contact-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
   label {
     width: 50%;
-    float: left;
-    clear: both;
   }
   .zip {
     display: flex;
