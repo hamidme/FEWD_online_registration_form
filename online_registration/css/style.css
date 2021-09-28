@@ -210,7 +210,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 14%;
+    gap: 14.3%;
   }
 
   .zip label {
@@ -219,6 +219,7 @@ footer {
     align-self: center;
   }
   .zip input {
-    width: 18%;
+    /*width: calc(50% - 312px);*/
+    width: 16.8%;
   }
 }
