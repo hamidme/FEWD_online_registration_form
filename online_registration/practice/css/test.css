@@ -188,32 +188,29 @@ footer {
     max-width: 1080px;
     margin: 0 auto;
   }
-
   .contact-item {
     display: flex;
     flex-direction: row;
-    column-gap: 8px;
-    margin: 10px 0;
+    justify-content: space-between;
   }
-
-  .contact-item label {
-    width: 200px;
-    align-self: center;
-    padding-bottom: 5px;
+  label {
+    width: 50%;
+    float: left;
+    clear: both;
   }
-  /*The part below took me one day*/
-
   .zip {
     display: flex;
     flex-direction: row;
-    column-gap: 8.5%;
-  }
-  .zip input {
-    min-width: 100px;
-    width: calc(65% - 350px);
+    justify-content: start;
+    gap: 14%;
   }
 
   .zip label {
-    width: 100px;
+    width: 18.7%;
+    /*flex: 0 1 130px;*/
+    align-self: center;
+  }
+  .zip input {
+    width: 18%;
   }
 }
