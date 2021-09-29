@@ -203,6 +203,7 @@ footer {
   }
   label {
     width: 50%;
+    align-self: center;
   }
   .zip {
     display: flex;
