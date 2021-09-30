@@ -1,216 +1,57 @@
-/*Base stypling*/
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Merriweather", serif;
-  background: #ffffff;
-  color: rgb(80, 80, 80);
-  line-height: 1.5;
-}
-
-.content-wrapper {
-  width: 90%;
-  max-width: 1080px;
   margin: 0 auto;
-}
-
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 100;
-  line-height: 1.2;
-  font-size: medium;
-  color: #2d3945;
-  font-weight: bold;
-}
-p {
-  font-weight: normal;
-}
-
-p,
-legend {
-  font-size: small;
-  color: #adaeaf;
-}
-header {
-  background: #2d3945;
-}
-
-header h1 {
+  max-width: 768px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  background-color: #093145;
   color: #fff;
-  padding: 15px 0;
-  font-weight: bold;
-  text-align: center;
 }
 
-h2 {
-  margin: 15px 0;
+input {
+  border: 1px solid white;
 }
 
-.intro h2,
-.intro p {
-  text-align: center;
+.contact-info {
+  padding: 50px 50px 35px 50px;
 }
 
-.intro h2 {
-  margin-bottom: 10px;
-}
-
-.intro p {
-  margin-bottom: 30px;
-}
-
-.intro {
-  border-bottom: solid #000 2px;
-}
-
-.hr {
-  margin-bottom: 1px;
-  border: 2px solid black;
-}
-fieldset {
-  border: none;
-}
-
-li {
-  margin: 10px 0;
-}
-
-.newsletter {
-  border-top: solid black 1px;
-  padding-top: 20px;
-}
-.contact-item,
-.zip,
-input,
-textarea,
-select,
-button {
-  margin: 10px 0;
-}
-
-.contact-item input,
-textarea,
-select,
-button {
-  width: 100%;
-}
-
-.zip {
+.contact-info .flex-pair {
   display: flex;
   flex-direction: column;
-  column-gap: 20px;
-}
-.zip input {
-  width: 50%;
 }
 
-input:focus,
-textarea:focus {
-  background: #f8f8ea70;
-}
-button:hover {
-  background: #43a19d;
-  cursor: pointer;
+.contact-info label {
+  margin: 15px;
 }
 
-::placeholder {
-  text-align: right;
-  font-style: italic;
-  font-size: small;
-}
-
-input,
-textarea,
-select,
-button {
-  border: none;
-  background: #eff0f1;
-  padding: 0.75em;
-  border-radius: 3px;
-}
-
-button,
-input,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-}
-
-select {
-  font-size: inherit;
-  font-size: 100%;
-  color: #adaeaf;
-}
-
-button {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
-textarea {
-  height: 15vh;
-}
-
-button {
-  background: #4ebbb5;
+.contact-info input {
   height: 50px;
-  color: #fff;
-}
-textarea,
-button {
-  display: flex;
-  flex-direction: row;
+  margin-bottom: 15px;
 }
 
-footer {
-  text-align: center;
-  font-size: small;
-  font-style: italic;
-  margin: 25px 0;
-  height: 20vh;
+#telephone {
+  max-width: 50%;
 }
 
-/*Media Query*/
 @media (min-width: 768px) {
-  .content-wrapper {
-    width: 50%;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-  .contact-item {
-    display: flex;
+  .contact-info .flex-pair {
     flex-direction: row;
-    justify-content: space-between;
   }
-  label {
-    width: 50%;
-    float: left;
-    clear: both;
+  .contact-info input {
+    flex-grow: 1;
+    flex-basis: 75%;
   }
-  .zip {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 14%;
+  .contact-info label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+    padding-top: 10px;
   }
-
-  .zip label {
-    width: 18.7%;
-    /*flex: 0 1 130px;*/
-    align-self: center;
-  }
-  .zip input {
-    width: 18%;
+  #telephone {
+    max-width: 25%;
   }
 }

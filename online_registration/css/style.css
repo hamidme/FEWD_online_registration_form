@@ -93,6 +93,16 @@ li {
   border-top: solid black 1px;
   padding-top: 20px;
 }
+
+/*.contact {
+  padding: 50px 50px 35px 50px;
+}*/
+
+.contact .contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-item,
 .zip,
 input,
@@ -102,27 +112,23 @@ button {
   margin: 10px 0;
 }
 
-.contact-item input,
-textarea,
-select,
-button {
-  width: 100%;
+#zip {
+  width: 50%;
 }
-
-.zip {
+.contact-text {
   display: flex;
   flex-direction: column;
-  column-gap: 20px;
 }
-.zip input {
-  width: 50%;
+
+.contact label {
+  margin-bottom: 10px;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   background: #dafffd;
-  transition: ease 4s;
+  transition: ease 2s;
 }
 button:hover {
   background: #43a19d;
@@ -163,21 +169,13 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-}
-
-textarea {
-  height: 15vh;
-}
-
-button {
   background: #4ebbb5;
   height: 50px;
   color: #fff;
 }
-textarea,
-button {
-  display: flex;
-  flex-direction: row;
+
+textarea {
+  height: 15vh;
 }
 
 footer {
@@ -196,29 +194,30 @@ footer {
     margin: 0 auto;
   }
 
-  .contact-item {
-    display: flex;
+  .contact .contact-item {
     flex-direction: row;
-    /*justify-content: space-between;*/
-  }
-  label {
-    width: 50%;
-    align-self: center;
-  }
-  .zip {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 14.3%;
+    gap: 10px;
   }
 
-  .zip label {
-    width: 18.7%;
-    /*flex: 0 1 130px;*/
-    align-self: center;
+  .contact-text {
+    display: flex;
+    flex-direction: column;
   }
-  .zip input {
-    /*width: calc(50% - 312px);*/
-    width: 16.8%;
+
+  .contact input,
+  select {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+
+  .contact label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+    padding-top: 15px;
+    min-width: 120px;
+  }
+  #zip {
+    max-width: 25%;
   }
 }
